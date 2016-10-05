@@ -1,0 +1,48 @@
+<!DOCTYPE>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <base href="/">
+
+        {% block page_title %}
+        <title>
+            Jon Davenport
+        </title>
+        {% endblock %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> 
+                
+        {% block meta_tags %}
+        <meta name = "description" content = "Jon Davenport is a software developer and journalist based in Washington, D.C. " />
+        <meta name = "keywords" content = "Jon Davenport, Davenport, journalist, developer, journalism, web development, python, javascript" />
+        
+        {% endblock %}
+
+        <link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css'%}" type="text/css">
+
+        <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js'%}" type="type/javascript"></script>
+
+        {% block page_styles %}
+        {% endblock %}
+        
+    </head>
+    <body>    
+        <div class="container-fluid">
+            <div class="row">
+
+            </div>                 
+            <div class="row">
+                {% block body_block %}{% endblock %}
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </body>
+
+    {% block page_js%}
+    
+    {% endblock %}
+
+</html> 

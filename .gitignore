@@ -1,0 +1,8 @@
+*.DS_Store
+*.pyc
+__pycache__
+*migrations/
+*dev/
+gulpfile.js
+node_modules/
+*portfolio/settings.py
